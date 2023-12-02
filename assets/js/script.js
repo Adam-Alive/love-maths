@@ -134,15 +134,8 @@ function displayMultiplyQuestion(operand1, operand2) {
 }
 
 function displayDivisionQuestion(operand1, operand2) {
+    operand1 = operand1 * operand2;
     document.getElementById("operand1").textContent = operand1;
     document.getElementById("operand2").textContent = operand2;
-    let tempOperand = parseInt((operand1 * operand2).textContent);
-    operand1 = tempOperand.textContent;
-    //operand1 = (document.getElementById("tempOperand").innerText);
-
     document.getElementById("operator").textContent = "/";
-    //console.log(tempOperand);
-    //document.getElementById("tempOperand").textContent = operand1;
-
-
 }
